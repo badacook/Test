@@ -87,7 +87,7 @@ rm -rf .git   //删除本地仓库配置
 2. 进入github -> Settings 在左侧 Developer settings -> Personal access tokens
 3. 点击按钮 Generate new token 新增一个token
 4、选择要同步的本地配置
-5、回到VSCode配置将token配置到本地
+5、回到VSCode 上传vscode本地配置，也可通过token 分享vscode配置
 
 
 
