@@ -60,7 +60,8 @@ git commit -m "首次提交" 将文件代码提交到本地的仓库中
 git config  --global user.name "badacook"     #Git是分布式版本控制系统，配置用户名和邮箱 
 git config  --global user.email "badacookwu@gmail.com" #Git是分布式版本控制系统，配置用户名和邮箱
 
-git remote add origin https://gitee.com/badacook/Test.git  添加远程版本库
+git remote add origin https://gitee.com/badacook/Test.git
+git remote add origin https://github.com/badacook/Test.git  添加远程版本库
 
 git pull origin master --allow-unrelated-histories  同步远程版本库运行没有记录的同步
 git commit -m "first commit" //提交更改
@@ -71,14 +72,22 @@ git push -u origin master  //提交到你的仓库
 git remote remove origin  //移除远程 仓库源的配置
 git remote set-url        //设置远程 仓库源的配置
 git config --global credential.helper wincred // Caching your GitHub password in Git
+git remote rm origin //删除远端仓库分支
 
 git config -l  //查看git配置 
 
 rm -rf .git   //删除本地仓库配置
 
 #接下来在使用 本地仓库 与远端仓库的同步时，可能会遇到冲突，主要同步步骤，先提交缓存区更改，清空缓存区，再同步，注意同步的分支结构,详情参阅廖雪峰的git教程
+#前提是 vscode 与 github.com的仓库连接正常
 
-
+#vscode 配置的同步  设置文件、快捷键设置文件、Launch File、Snippets Folder、VSCode 扩展设置、工作空间
+#Setting Sync 可同步包含的所有扩展和完整的用户文件夹 上传： Shift + Alt + U (Sync: Update / Upload Settings) 下载： Shift + Alt + D (Sync: Download Settings)
+1. 安装 同步插件"Settings Sync"
+2. 进入github -> Settings 在左侧 Developer settings -> Personal access tokens
+3. 点击按钮 Generate new token 新增一个token
+4、选择要同步的本地配置
+5、回到VSCode配置将token配置到本地
 
 
 
