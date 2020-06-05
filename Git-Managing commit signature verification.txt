@@ -90,6 +90,9 @@ rm -rf .git   //删除本地仓库配置
 5、回到VSCode 上传vscode本地配置，也可通过token 分享vscode配置
 
 
+其中同步时报错，当你通过HTTPS访问Git远程仓库的时候，如果服务器的SSL证书未经过第三方机构(例如：CA)签署，那么Git就会报错，忽略证书错误
+Git报错: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+env GIT_SSL_NO_VERIFY=true
 
 
 
