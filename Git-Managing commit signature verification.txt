@@ -62,7 +62,7 @@ git config  --global user.email "badacookwu@gmail.com" #Git是分布式版本控
 
 git remote add origin https://gitee.com/badacook/Test.git
 git remote add origin https://github.com/badacook/Test.git  添加远程版本库
-
+git remote set-url --add origin https://gitee.com/badacook/Test.git
 git pull origin master --allow-unrelated-histories  同步远程版本库运行没有记录的同步
 git commit -m "first commit" //提交更改
 git status                  //查看一下状态：
